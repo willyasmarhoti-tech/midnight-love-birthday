@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b22">
+  <title>Midnight Love ✦ Untuk My icil gw</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Midnight Love"><span>✦</span> midnight love</a>
+    <button class="music-btn" id="musicBtn" type="button">♫ <span id="musicLabel">Putar musik</span></button>
+  </header>
+
+  <main class="app-shell">
+    <div class="progress" aria-label="Progres kejutan">
+      <span class="progress-dot active"></span><span class="progress-line"></span>
+      <span class="progress-dot"></span><span class="progress-line"></span>
+      <span class="progress-dot"></span><span class="progress-line"></span>
+      <span class="progress-dot"></span><span class="progress-line"></span>
+      <span class="progress-dot"></span>
+    </div>
+
+    <section class="page active" data-page="0">
+      <div class="moon">☾</div>
+      <div class="pill">A LITTLE SURPRISE FOR YOU</div>
+      <p class="script intro">Hei, kamu yang paling gemes...</p>
+      <h1>Happy Birthday,<br><span class="gradient">My icil gw</span> <span class="pink">♥</span></h1>
+      <p class="lead">Aku punya sesuatu buat kamu. Tapiii... bukanya satu-satu, ya. Jangan buru-buru! 🌙</p>
+      <div class="mascot">ʕっ•ᴥ•ʔっ <span>♡</span></div>
+      <button class="primary next-btn" type="button">Aku siap! Buka yuk <span>→</span></button>
+      <p class="hint">Kejutan kecil dibuat dengan sayang oleh Willy</p>
+    </section>
+
+    <section class="page" data-page="1">
+      <div class="step-label">01 / OUR LITTLE MEMORY</div>
+      <div class="sticker">📸</div>
+      <h2>Satu foto,<br><span class="gradient">banyak cerita.</span></h2>
+      <p class="lead">Kalau kenangan kita dijadikan foto, yang ini mau aku simpan di tempat spesial. 💜</p>
+      <div class="polaroid">
+        <div class="photo-area">
+          <img id="couplePhoto" src="assets/foto-kalian.jpg" alt="Foto kenangan kita">
+          <div id="photoFallback" class="photo-fallback"><span>♡</span><b>Foto kita di sini</b><small>Tambahkan foto kalian ke folder assets</small></div>
+        </div>
+        <p>my favorite person ✧</p>
+      </div>
+      <p class="tiny">Foto ini hanya contoh tempat foto. Kamu bisa menggantinya dengan foto kalian sendiri.</p>
+      <div class="nav-actions"><button class="secondary prev-btn" type="button">← Kembali</button><button class="primary next-btn" type="button">Lihat lagi →</button></div>
+    </section>
+
+    <section class="page" data-page="2">
+      <div class="step-label">02 / REASONS I SMILE</div>
+      <div class="sticker">🧸</div>
+      <h2>Alasan kamu<br><span class="gradient">spesial banget.</span></h2>
+      <p class="lead">Pilih kartu-kartunya, ada pesan kecil di balik masing-masing. ✨</p>
+      <div class="flip-grid">
+        <button class="flip-card" type="button" aria-expanded="false"><span class="card-front">♡<small>Ketuk aku</small></span><span class="card-back">Kamu itu gemesin, bahkan saat kamu nggak sadar. 🧸</span></button>
+        <button class="flip-card" type="button" aria-expanded="false"><span class="card-front">☾<small>Ketuk aku</small></span><span class="card-back">Obrolan kecil sama kamu bisa bikin hariku lebih baik. 🌙</span></button>
+        <button class="flip-card" type="button" aria-expanded="false"><span class="card-front">✦<small>Ketuk aku</small></span><span class="card-back">Aku harap kamu selalu punya alasan untuk tersenyum. 💗</span></button>
+      </div>
+      <div class="nav-actions"><button class="secondary prev-btn" type="button">← Kembali</button><button class="primary next-btn" type="button">Ada kejutan lagi →</button></div>
+    </section>
+
+    <section class="page" data-page="3">
+      <div class="step-label">03 / MAKE A WISH</div>
+      <div class="sticker">🎂</div>
+      <h2>Tiup lilinnya,<br><span class="gradient">buat harapan.</span></h2>
+      <p class="lead">Tekan tombol di bawah untuk mengirim harapan baik ke semesta. Jangan lupa wish dulu! 💫</p>
+      <div class="cake-wrap">
+        <div class="cake"><div class="flame" id="flame">✦</div><div class="candle"></div><div class="icing"></div><div class="cake-top"></div><div class="cake-bottom"></div><div class="sprinkles">✦　·　♡　·　✦</div></div>
+      </div>
+      <button class="secondary" id="wishBtn" type="button">Kirim harapan baik ✨</button>
+      <p class="wish-message" id="wishMessage" aria-live="polite"></p>
+      <div class="nav-actions"><button class="secondary prev-btn" type="button">← Kembali</button><button class="primary next-btn" type="button">Baca suratku 💌</button></div>
+    </section>
+
+    <section class="page" data-page="4">
+      <div class="step-label">04 / A LETTER FOR YOU</div>
+      <div class="letter-card">
+        <div class="letter-heart">♡</div>
+        <p class="script intro">Dear My icil gw,</p>
+        <h2>Selamat ulang tahun,<br><span class="gradient">kesayangannya Willy.</span></h2>
+        <p>Selamat ulang tahun, yaa, My icil gw! 🥹💜</p>
+        <p>Semoga di umur yang baru ini, kamu makin bahagia, sehat, dimudahkan dalam semua hal baik, dan dikelilingi orang-orang yang tulus menyayangimu. Semoga hal-hal yang kamu doakan pelan-pelan menemukan jalannya.</p>
+        <p>Terima kasih sudah menjadi kamu—dengan semua hal kecil yang bikin kamu unik dan menggemaskan. Jangan lupa istirahat, jaga diri baik-baik, dan tetap jadi orang yang punya banyak alasan untuk tersenyum.</p>
+        <p>Aku berharap hari ini bisa bikin kamu merasa sedikit lebih disayang. Semoga kejutan manis datang ke hidupmu, bukan cuma hari ini, tapi juga hari-hari setelahnya. 🌙</p>
+        <p class="signoff">With lots of love,</p>
+        <p class="script signature">Willy <span>♥</span></p>
+      </div>
+      <div class="nav-actions"><button class="secondary prev-btn" type="button">← Kembali</button><button class="primary next-btn" type="button">Satu hal terakhir →</button></div>
+    </section>
+
+    <section class="page" data-page="5">
+      <div class="final-star">✦</div>
+      <p class="script intro">one more thing...</p>
+      <h2>Semoga senyummu<br>selalu punya <span class="gradient">alasan.</span></h2>
+      <p class="lead">Semoga hal-hal baik selalu menemukanmu. Hari ini, besok, dan di hari-hari biasa juga. 💜</p>
+      <div class="final-mascot">ʕ•ᴥ•ʔっ♡</div>
+      <p class="script final-note">You deserve all the lovely things.</p>
+      <p class="made-by">Made with ♡ by Willy</p>
+      <div class="nav-actions centered"><button class="secondary prev-btn" type="button">← Baca surat lagi</button><button class="primary" id="restartBtn" type="button">Ulangi dari awal ↻</button></div>
+    </section>
+  </main>
+
+  <footer>under the same moon <span>✦</span> just for you</footer>
+  <audio id="birthdayMusic" src="assets/musik.mp3" preload="none" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
